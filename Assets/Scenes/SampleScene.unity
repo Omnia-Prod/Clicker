@@ -153,8 +153,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff7d83d701bd4ad0b38aa36fbf6c120d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  THPPhysic: {fileID: 371140740}
-  THPMagic: {fileID: 1367519111}
+  thpPhysic: {fileID: 371140740}
+  thpMagic: {fileID: 1367519111}
   TMoneyGold: {fileID: 1836921126}
   TMoneyMagicStone: {fileID: 1524495474}
 --- !u!4 &284263667
@@ -184,8 +184,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57ae99c7bdf943d0af64cfc14693ec94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  THPPhysic: {fileID: 448934078}
-  THPMagic: {fileID: 2114686096}
+  thpPhysic: {fileID: 448934078}
+  thpMagic: {fileID: 2114686096}
 --- !u!1 &349883567
 GameObject:
   m_ObjectHideFlags: 0
@@ -215,8 +215,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 756a234963fcef344b1459957bceb641, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _doorDisplay: {fileID: 0}
-  _playerDisplay: {fileID: 0}
+  DoorDisplay: {fileID: 284263668}
+  PlayerDisplay: {fileID: 284263666}
+  Door: {fileID: 626272202}
 --- !u!4 &349883569
 Transform:
   m_ObjectHideFlags: 0
@@ -634,7 +635,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.17426129, g: 0.2461533, b: 0.41509432, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -867,9 +868,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 349883568}
+      - m_Target: {fileID: 11500000, guid: 1b316f1f62384004859b8d7cdbea3f97, type: 3}
         m_TargetAssemblyTypeName: Manager, Assembly-CSharp
-        m_MethodName: AddOnClick
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1155,7 +1156,7 @@ Transform:
   - {fileID: 375055664}
   - {fileID: 1866915323}
   m_Father: {fileID: 1936319716}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1181950731
 PrefabInstance:
@@ -2137,9 +2138,9 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1913640914}
+  - {fileID: 1075298822}
   - {fileID: 1836921125}
   - {fileID: 1524495473}
-  - {fileID: 1075298822}
   - {fileID: 371140739}
   - {fileID: 1367519110}
   m_Father: {fileID: 1415427853}

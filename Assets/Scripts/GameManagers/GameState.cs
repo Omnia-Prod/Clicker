@@ -1,13 +1,20 @@
 ﻿using Entities;
+using UnityEngine;
 
 public class GameState
 {
-    private Player _player;
-    private Door _door;
+    public Player _player { get; set; }
+    public Door _door { get; set; }
     
     public void Loot(int gold, int magicStone)
     {
         _player.Gold += gold;
         _player.MagicStone += magicStone;
+    }
+
+    public void Start()
+    {
+        this._player = new Player();
+        this._door = new Door();
     }
 }

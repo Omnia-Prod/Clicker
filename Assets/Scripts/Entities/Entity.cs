@@ -12,8 +12,6 @@ public abstract class Entity
 
     public float AtkPhysic { get; set; }
     public float AtkMagic { get; set; }
-
-    protected GameState GameState;
     
     public void AttackMagic(Entity target)
     {
@@ -49,7 +47,7 @@ public abstract class Entity
     }
 
     protected abstract void onDefeated();
-    
+
     public enum DamageType
     {
         Physic,

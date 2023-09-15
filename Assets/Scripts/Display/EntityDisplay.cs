@@ -1,20 +1,21 @@
 ﻿using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace DisplayManager {
 
     public class EntityDisplay<T> : MonoBehaviour where T: Entity 
     {
         //public TMP_Text TDamage;
-            public TMP_Text THPPhysic;
-            public TMP_Text THPMagic;
+            public TMP_Text thpPhysic;
+            public TMP_Text thpMagic;
             
             public T Ent { get; set; }
             
             public void Display()
             {
-                THPPhysic.text = Ent.HpPhysic.ToString();
-                THPMagic.text = Ent.HpMagic.ToString();
+                thpPhysic.text = Ent.HpPhysic.ToString();
+                thpMagic.text = Ent.HpMagic.ToString();
             }
     }
 }

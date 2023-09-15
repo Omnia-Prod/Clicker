@@ -10,8 +10,8 @@ namespace DisplayManager
         
         public new void Display()
         {
-            THPPhysic.text = Ent.HpPhysic.ToString();
-            THPMagic.text = Ent.HpMagic.ToString();
+            thpPhysic.text = Ent.HpPhysic.ToString();
+            thpMagic.text = Ent.HpMagic.ToString();
 
             TMoneyGold.text = Ent.Gold.ToString();
             TMoneyMagicStone.text = Ent.MagicStone.ToString();
